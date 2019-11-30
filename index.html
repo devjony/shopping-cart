@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Index CSS -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/58c8c591b0.js" crossorigin="anonymous"></script>
+
+    <title>Loja Virtual</title>
+</head>
+<body>
+    <div class="container" id="header">
+    </div><!-- div#header -->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-10">
+                    <div class="title" onclick="showCart()"><span>Meu Carrinho</span></div>
+                </div><!-- div.col-10 -->
+                <div class="col-2 mineBreadcrumb">
+                    <i class="fas fa-home" onclick="showProducts()"></i>
+                    <i class='fa fa-angle-right'></i>
+                    <span>Meu carrinho</span>
+                    </div><!-- div.col-2 mineBreadcrumb -->
+            </div><!-- div.row -->  
+        </div><!-- div.container -->
+    </div><!-- div.container-fluid -->
+    <div class="container" id="products">
+        <table class="table table-hover border">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>PRODUTO</th>
+                    <th>PRECO</th>
+                    <th></th>
+                </tr>
+            </thead><!-- thead -->
+            <tbody>
+                <!-- dynamic -->
+            </tbody>
+        </table><!-- table -->
+    </div><!-- div#products -->
+    <div class="container" id="shopping-cart">
+        <table class="table table-hover border">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>PRODUTO</th>
+                    <th>PRECO</th>
+                    <th>QUANTIDADE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- dynamic -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><input type="text" placeholder="Código do cupom" id="coupon"></td>
+                    <td><button class="btn btn-secondary">APLICAR CUPOM</button></td>
+                    <td>Total: <input id="total" type='text' min='0' max='10' value='0' readonly></td>
+                    <td><button class="btn btn-secondary">FINALIZAR</button></td>
+                </tr>
+            </tfoot><!-- tfoot -->
+        </table><!-- table -->
+    </div><!-- div#shopping-cart -->
+  
+
+    
+    
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Index jQuery -->
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container-fluid {
+    background-color: silver;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 100px;
+}
+    .title span{
+        cursor: pointer;
+    }
+
+.mineBreadcrumb {
+    text-align: right;
+    line-height: 100px;
+    font-weight: 500;
+}
+    .mineBreadcrumb span,
+    .mineBreadcrumb .fa {
+        display: none;
+    }
+    .mineBreadcrumb .fas {
+        cursor: pointer;
+    }
+
+.img {
+    width: 80px;
+    margin-left: 60px;
+}
+
+.remove {
+    line-height: 0px;
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+}
+
+#coupon {
+    height: 38px;
+    text-align: center;
+}
+
+#total {
+    height: 38px;
+    text-align: center;
+    width: 80px;
+}
+
+#shopping-cart {
+    display: none;
+}
+
+input[type="number"] {
+    height: 200%;
+    padding: 0;
+    width: 40px;
+    text-align: center;
+}
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button {  
+        opacity: 1;
+    }
+
+tr td {
+    line-height: 100px;
+}
+
+

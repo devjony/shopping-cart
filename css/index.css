@@ -5,7 +5,7 @@
 
 .container-fluid {
     background-color: silver;
-    margin-top: 60px;
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 
@@ -44,6 +44,10 @@
     color: blue;
 }
 
+#logo {
+    width: 100%;
+}
+
 #coupon {
     height: 38px;
     text-align: center;
@@ -57,6 +61,11 @@
 
 #shopping-cart {
     display: none;
+}
+
+#emptyCart {
+    font-size: 22px;
+    text-align: center
 }
 
 input[type="number"] {
@@ -74,4 +83,9 @@ tr td {
     line-height: 100px;
 }
 
+footer {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
 

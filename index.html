@@ -18,6 +18,13 @@
 </head>
 <body>
     <div class="container" id="header">
+        <div class="row">
+            <div class="col-2">
+                <div>
+                    <img src="img/logo.png" alt="logo" id='logo'>
+                </div>
+            </div>
+        </div>
     </div><!-- div#header -->
     <div class="container-fluid">
         <div class="container">
@@ -29,7 +36,7 @@
                     <i class="fas fa-home" onclick="showProducts()"></i>
                     <i class='fa fa-angle-right'></i>
                     <span>Meu carrinho</span>
-                    </div><!-- div.col-2 mineBreadcrumb -->
+                </div><!-- div.col-2 mineBreadcrumb -->
             </div><!-- div.row -->  
         </div><!-- div.container -->
     </div><!-- div.container-fluid -->
@@ -57,7 +64,7 @@
                     <th>PRECO</th>
                     <th>QUANTIDADE</th>
                 </tr>
-            </thead>
+            </thead><!-- thead -->
             <tbody>
                 <!-- dynamic -->
             </tbody>
@@ -66,15 +73,15 @@
                     <td><input type="text" placeholder="Código do cupom" id="coupon"></td>
                     <td><button class="btn btn-secondary">APLICAR CUPOM</button></td>
                     <td>Total: <input id="total" type='text' min='0' max='10' value='0' readonly></td>
-                    <td><button class="btn btn-secondary">FINALIZAR</button></td>
+                    <td><button class="btn btn-secondary" id="buyButton">FINALIZAR</button></td>
                 </tr>
             </tfoot><!-- tfoot -->
         </table><!-- table -->
     </div><!-- div#shopping-cart -->
-  
 
-    
-    
+    <footer>
+        <p>Copyright @2019 devJony All right reserved</p>
+    </footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

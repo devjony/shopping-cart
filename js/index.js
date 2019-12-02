@@ -4,6 +4,7 @@ var shoppingCart = $("#shopping-cart > table > tbody");
 var totalCartValue = 0;
 var productIndex = 0;
 
+/* Products */
 var products = [
     {
         img: "https://images-americanas.b2w.io/produtos/01/00/img/134537/1/134537153_1GG.jpg",
@@ -57,7 +58,6 @@ products.forEach(product => {
 });
 
 /* insert product in shopping cart */
-
 function addToCart(productIndex){
     shoppingCart.append(
         "<tr>\
@@ -80,8 +80,8 @@ function addToCart(productIndex){
     alert("Produto adicionado ao carrinho");
 };
 
+/* generate total value from cart */
 function getTotal() {
-
     cartProducts = shoppingCart.find("tr");
     prices = shoppingCart.find(".price");
     qtds = shoppingCart.find(".qtd");
@@ -94,12 +94,18 @@ function getTotal() {
     $("#total").val((totalCartValue).toFixed(2));
 }
 
+    /* generate total on changes */
+    $(function(){
+        $(shoppingCart).on("change", ":input[type='number']", function(){
+            getTotal();
+        });    
+    });
+
 function showCart(){
     $(".mineBreadcrumb .fa").show();
     $(".mineBreadcrumb span").show();
     $("#products").hide();
     $("#shopping-cart").show();
-
     $("#coupon").val("");
 }
 
@@ -110,13 +116,17 @@ function showProducts(){
     $(".mineBreadcrumb span").hide();
 }
 
+$("#buyButton").click(function(){
+    div = $("#shopping-cart tbody tr")
+    if(div.length > 0){
+        $("#shopping-cart tbody tr").remove();
+        getTotal();
+        alert("Compra finalizada! \nVocê receberá um e-mail com a lista de compras.")
+    }
+});
+
+/* remove product from cart */
 $(shoppingCart).on("click", ".remove", function(){
     $(this).closest("tr").remove();
     getTotal();
-});
-
-$(function(){
-    $(shoppingCart).on("change", ":input[type='number']", function(){
-        getTotal();
-    });    
 });
